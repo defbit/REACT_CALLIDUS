@@ -1,0 +1,19 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 20</title>
+</head>
+<body>
+
+    <script>
+    const juntarArraysArrow = (arr1, arr2) => [...arr1, ...arr2];
+
+    const array1 = prompt("Digite os elementos do primeiro array separados por espaço:").split(" ");
+    const array2 = prompt("Digite os elementos do segundo array separados por espaço:").split(" ");
+    const resultado = juntarArraysArrow(array1, array2);
+
+    alert(`O resultado da junção dos arrays é: [${resultado}]`);
+
+    </script>
+</body>
+</html>

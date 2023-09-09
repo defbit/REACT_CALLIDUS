@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio8</title>
+</head>
+<body>
+
+    <script>
+    function calcularMontante(capitalInicial, taxaJuros, tempoMeses) {
+    const taxaDecimal = taxaJuros / 100;
+    const montante = capitalInicial * Math.pow(1 + taxaDecimal, tempoMeses);
+    return montante.toFixed(2);
+    }
+
+    const capital = parseFloat(prompt("Informe o capital inicial:"));
+    const taxa = parseFloat(prompt("Informe a taxa de juros em percentual:"));
+    const tempo = parseInt(prompt("Informe o tempo do investimento em meses:"));
+
+    const resultado = calcularMontante(capital, taxa, tempo);
+    alert(`O montante do investimento é R$ ${resultado}`);
+
+    </script>
+</body>
+</html>

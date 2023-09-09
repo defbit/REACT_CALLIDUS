@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>exercicio5</title>
+
+   <body>
+    raio: <input type="raio" name="a" id="a"><br>
+    <button onclick="Calcular_area(document.getElementById('a').value)">Calcular Area</button>
+    <button onclick="Calcular_perimetro(document.getElementById('a').value)">Calcular Perimetro</button>
+
+
+    <script>
+        function Calcular_area(raio){
+            const result1 = 3.14 * (raio**2);
+            alert("A área é: " + result1);
+        }
+        function Calcular_perimetro(raio){
+            const result2 = (2 * 3.14 * raio);
+            alert("O perimetro é: " + result2);
+        }
+    </script>
+</body>
+
+ </head>
+</html>

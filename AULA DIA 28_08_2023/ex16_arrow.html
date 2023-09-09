@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 16</title>
+</head>
+<body>
+
+    <script>
+    const calcularSomaDigitosArrow = (numero) => {
+    return numero.toString().split('').reduce((acc, digit) => acc + parseInt(digit), 0);
+    };
+
+    const inputNumero = parseInt(prompt("Digite um número inteiro positivo:"));
+    if (inputNumero >= 0) {
+    const somaDigitos = calcularSomaDigitosArrow(inputNumero);
+    alert(`A soma dos dígitos do número ${inputNumero} é: ${somaDigitos}`);
+    } else {
+    alert("Por favor, digite um número inteiro positivo.");
+    }
+
+    </script>
+</body>
+</html>

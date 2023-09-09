@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 14</title>
+</head>
+<body>
+
+    <script>
+    function filtrarNumerosPositivos(arr) {
+    const numerosPositivos = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+        numerosPositivos.push(arr[i]);
+        }
+    }
+
+    return numerosPositivos;
+    }
+
+    const inputArray = prompt("Digite os números do array separados por espaço:");
+    const numeros = inputArray.split(" ").map(Number);
+    const numerosPositivos = filtrarNumerosPositivos(numeros);
+    alert(`Números positivos no array: ${numerosPositivos}`);
+    </script>
+</body>
+</html>

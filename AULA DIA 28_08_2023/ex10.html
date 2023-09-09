@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 10</title>
+</head>
+<body>
+
+    <script>
+    function contarCaractereNaString() {
+    const inputString = prompt("Digite a string:");
+    const caractere = prompt("Digite o caractere que deseja contar:");
+
+    if (inputString === null || caractere === null || inputString === "" || caractere === "") {
+        alert("Por favor, forneça uma string e um caractere para contar.");
+        return;
+    }
+
+    let contador = 0;
+    for (let i = 0; i < inputString.length; i++) {
+        if (inputString[i] === caractere) {
+        contador++;
+        }
+    }
+
+    alert(`O caractere "${caractere}" aparece ${contador} vezes na string.`);
+    }
+
+    contarCaractereNaString();
+
+    </script>
+</body>
+</html>

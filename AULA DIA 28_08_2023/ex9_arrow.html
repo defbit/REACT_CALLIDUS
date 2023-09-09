@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 9</title>
+</head>
+<body>
+
+    <script>
+    const calcularFatorialArrow = (numero) => {
+        if (numero === 0 || numero === 1) {
+        return 1;
+        } else {
+    let fatorial = 1;
+        for (let i = 2; i <= numero; i++) {
+            fatorial *= i;
+        }
+        return fatorial;
+  }
+};
+
+const numero = parseInt(prompt("Informe um número inteiro:"));
+const resultado = calcularFatorialArrow(numero);
+alert(`O fatorial de ${numero} é ${resultado}`);
+
+    </script>
+</body>
+</html>

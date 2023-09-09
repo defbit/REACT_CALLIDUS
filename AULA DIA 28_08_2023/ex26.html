@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 26</title>
+</head>
+<body>
+
+    <script>
+    function determinarNivelExperiencia(anosEstudo) {
+    if (anosEstudo >= 7) {
+        return "Grão Mestre Jedi";
+    } else if (anosEstudo >= 3) {
+        return "Senior";
+    } else if (anosEstudo >= 1) {
+        return "Pleno";
+    } else {
+        return "Junior";
+    }
+    }
+
+    const anosEstudo = parseInt(prompt("Digite o total de anos de estudo:"));
+    const nivelExperiencia = determinarNivelExperiencia(anosEstudo);
+    console.log(`O nível de experiência é: ${nivelExperiencia}`);
+    </script>
+</body>
+</html>

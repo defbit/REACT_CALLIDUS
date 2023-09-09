@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 12</title>
+</head>
+<body>
+
+    <script>
+    const calcularSomaArrayArrow = (arr) => {
+    return arr.reduce((acc, num) => acc + num, 0);
+    };
+
+    const inputArray = prompt("Digite os números do array separados por espaço:");
+    const numeros = inputArray.split(" ").map(Number);
+    const resultado = calcularSomaArrayArrow(numeros);
+    alert(`A soma dos números no array é: ${resultado}`);
+
+    </script>
+</body>
+</html>

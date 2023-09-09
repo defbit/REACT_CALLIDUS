@@ -1,0 +1,24 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 22</title>
+</head>
+<body>
+
+    <script>
+    function inverterArray(arr) {
+    const resultado = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        resultado.push(arr[i]);
+    }
+    return resultado;
+    }
+
+    const inputArray = prompt("Digite os elementos do array separados por espaço:").split(" ");
+    const arrayInvertido = inverterArray(inputArray);
+
+    alert(`O array invertido é: [${arrayInvertido}]`);
+
+    </script>
+</body>
+</html>

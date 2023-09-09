@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 27</title>
+</head>
+<body>
+
+    <script>
+    function listarHabilidadesUsuarios(usuarios) {
+    for (let i = 0; i < usuarios.length; i++) {
+        const usuario = usuarios[i];
+        const habilidades = usuario.habilidades.join(", ");
+        console.log(`O ${usuario.nome} possui as habilidades: ${habilidades}`);
+    }
+    }
+
+    const usuarios = [
+    {
+        nome: "Douglas",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+    },
+    {
+        nome: "Elton",
+        habilidades: ["PHP", "Ruby on Rails", "Laravel"]
+    }
+    ];
+
+    listarHabilidadesUsuarios(usuarios);
+
+    </script>
+</body>
+</html>

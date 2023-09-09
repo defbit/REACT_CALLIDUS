@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio7</title>
+</head>
+<body>
+
+    <script>
+    function contarVogais(string) {
+    const vogais = 'AEIOUaeiou';
+    let contador = 0;
+
+    for (let i = 0; i < string.length; i++) {
+        if (vogais.includes(string[i])) {
+        contador++;
+        }
+    }
+
+    return contador;
+}
+
+    const inputString = prompt("Digite uma palavra:");
+    const numeroDeVogais = contarVogais(inputString);
+    alert(`O número de vogais na palavra "${inputString}" é ${numeroDeVogais}`);
+    </script>
+</body>
+</html>

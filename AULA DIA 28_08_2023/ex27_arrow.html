@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 27</title>
+</head>
+<body>
+
+    <script>
+    const listarHabilidadesUsuariosArrow = (usuarios) => {
+    usuarios.forEach((usuario) => {
+        const habilidades = usuario.habilidades.join(", ");
+        console.log(`O ${usuario.nome} possui as habilidades: ${habilidades}`);
+    });
+    };
+
+    const usuarios = [
+    {
+        nome: "Douglas",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+    },
+    {
+        nome: "Elton",
+        habilidades: ["PHP", "Ruby on Rails", "Laravel"]
+    }
+    ];
+
+    listarHabilidadesUsuariosArrow(usuarios);
+
+    </script>
+</body>
+</html>

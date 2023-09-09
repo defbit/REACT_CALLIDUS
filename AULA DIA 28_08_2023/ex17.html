@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 117</title>
+</head>
+<body>
+
+    <script>
+    function gerarFibonacci() {
+    const fibonacci = [0, 1];
+    for (let i = 2; i < 10; i++) {
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+    }
+    return fibonacci;
+    }
+
+    const sequenciaFibonacci = gerarFibonacci();
+    alert(`Os 10 primeiros números da sequência de Fibonacci são: ${sequenciaFibonacci.join(', ')}`);
+
+    </script>
+</body>
+</html>

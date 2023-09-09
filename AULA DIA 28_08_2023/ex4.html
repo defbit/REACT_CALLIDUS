@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>exercicio4</title>
+
+   <body>
+    base: <input type="base" name="a" id="a"><br>
+    altura: <input type="altura" name="b" id="b"><br>
+    <button onclick="Calcular(document.getElementById('a').value, document.getElementById('b').value)">Calcular</button>
+
+    <script>
+        function Calcular(base, altura){
+            const result = (base * altura)/2;
+            window.alert(result);
+        }
+    </script>
+</body>
+
+ </head>
+</html>

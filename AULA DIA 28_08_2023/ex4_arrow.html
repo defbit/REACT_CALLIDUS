@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>exercicio4</title>
+ </head>
+ <body>
+    base: <input type="number" name="a" id="a"><br>
+    altura: <input type="number" name="b" id="b"><br>
+    <button onclick="calcularArea()">Calcular</button>
+
+    <script>
+        const calcularArea = () => {
+            const base = parseFloat(document.getElementById('a').value);
+            const altura = parseFloat(document.getElementById('b').value);
+
+            if (!isNaN(base) && !isNaN(altura)) {
+                const result = (base * altura) / 2;
+                window.alert(result);
+            } else {
+                window.alert("Por favor, insira valores válidos para base e altura.");
+            }
+        }
+    </script>
+ </body>
+</html>

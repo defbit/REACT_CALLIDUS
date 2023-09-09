@@ -1,0 +1,36 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 19</title>
+</head>
+<body>
+
+    <script>
+    function encontrarMaiorString(arr) {
+    if (arr.length === 0) {
+        return null;
+    }
+
+    let maior = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i].length > maior.length) {
+        maior = arr[i];
+        }
+    }
+
+    return maior;
+    }
+
+    const inputArray = prompt("Digite as strings do array separadas por espaço:");
+    const strings = inputArray.split(" ");
+    const maiorString = encontrarMaiorString(strings);
+
+    if (maiorString !== null) {
+    alert(`A maior string no array é: "${maiorString}"`);
+    } else {
+    alert("O array está vazio.");
+    }
+
+        </script>
+</body>
+</html>

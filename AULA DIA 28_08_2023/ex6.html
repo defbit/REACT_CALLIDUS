@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio6</title>
+</head>
+<body>
+    <label for="a">Número:</label>
+    <input type="number" name="a" id="a"><br>
+    <button onclick="inverter()">Inverter número</button>
+
+    <script>
+        function inverter() {
+            var numero = parseFloat(document.getElementById('a').value);
+            var numeroinverso = parseFloat(numero.toString().split('').reverse().join('')) * Math.sign(numero);
+            window.alert(`O número inverso é: ${numeroinverso}`);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

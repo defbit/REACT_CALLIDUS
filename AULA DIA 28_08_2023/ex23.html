@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 23</title>
+</head>
+<body>
+
+    <script>
+    function formatarEndereco(usuario) {
+    const { cidade, estado, bairro, rua, numero } = usuario;
+    return `O usuário mora em ${cidade} / ${estado}, no bairro ${bairro}, na ${rua}, no ${numero}.`;
+    }
+
+    const usuario = {
+    cidade: "Cuiabá",
+    estado: "MT",
+    bairro: "Jardim Cuiabá",
+    rua: "Av do CPA",
+    numero: 1293
+    };
+
+    const enderecoFormatado = formatarEndereco(usuario);
+    alert(enderecoFormatado);
+
+    </script>
+</body>
+</html>

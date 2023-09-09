@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 10</title>
+</head>
+<body>
+
+    <script>
+    const contarCaractereNaStringArrow = () => {
+    const inputString = prompt("Digite a string:");
+    const caractere = prompt("Digite o caractere que deseja contar:");
+
+    if (inputString === null || caractere === null || inputString === "" || caractere === "") {
+        alert("Por favor, forneça uma string e um caractere para contar.");
+        return;
+    }
+
+    const contador = inputString.split(caractere).length - 1;
+
+    alert(`O caractere "${caractere}" aparece ${contador} vezes na string.`);
+    };
+
+    contarCaractereNaStringArrow();
+
+    </script>
+</body>
+</html>

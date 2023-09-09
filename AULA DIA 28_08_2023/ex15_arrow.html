@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 15</title>
+</head>
+<body>
+
+    <script>
+    const encontrarMaiorValorArrow = (arr) => {
+    if (arr.length === 0) {
+        return undefined;
+    }
+    return Math.max(...arr);
+    };
+
+    const inputArray = prompt("Digite os números do array separados por espaço:");
+    const numeros = inputArray.split(" ").map(Number);
+    const maiorValor = encontrarMaiorValorArrow(numeros);
+
+    if (maiorValor !== undefined) {
+    alert(`O maior valor no array é: ${maiorValor}`);
+    } else {
+    alert("O array está vazio.");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 25</title>
+</head>
+<body>
+
+    <script>
+    function verificarHabilidadeJavascript(habilidades) {
+    for (let i = 0; i < habilidades.length; i++) {
+        if (habilidades[i] === "Javascript") {
+        return true;
+        }
+    }
+    return false;
+    }
+
+    const habilidades = ["HTML", "CSS", "Javascript", "React"];
+    const possuiJavascript = verificarHabilidadeJavascript(habilidades);
+
+    if (possuiJavascript) {
+    console.log("O vetor de habilidades possui a habilidade 'Javascript'.");
+    } else {
+    console.log("O vetor de habilidades não possui a habilidade 'Javascript'.");
+    }
+    </script>
+</body>
+</html>

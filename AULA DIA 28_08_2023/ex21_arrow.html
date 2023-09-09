@@ -1,0 +1,21 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 21</title>
+</head>
+<body>
+
+    <script>
+    const contarPalavrasArrow = (texto) => {
+    const palavras = texto.split(/\s+/).filter((palavra) => palavra !== "");
+    return palavras.length;
+    };
+
+    const inputTexto = prompt("Digite o texto para contar as palavras:");
+    const quantidadePalavras = contarPalavrasArrow(inputTexto);
+
+    alert(`O texto tem ${quantidadePalavras} palavras.`);
+    
+    </script>
+</body>
+</html>

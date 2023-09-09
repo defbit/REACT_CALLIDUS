@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 2</title>
+</head>
+<body>
+    Numero: <input type="number" name="a" id="a"><br>
+    <button onclick="calcularCuboArrow()">Cubo</button>
+
+    <script>
+        const calcularCuboArrow = () => {
+            const a = parseFloat(document.getElementById('a').value);
+            if (!isNaN(a)) {
+                const result = Math.pow(a, 3);
+                window.alert("O cubo de " + a + " é igual a " + result);
+            } else {
+                window.alert("Por favor, insira um número válido.");
+            }
+        }
+    </script>
+</body>
+</html>

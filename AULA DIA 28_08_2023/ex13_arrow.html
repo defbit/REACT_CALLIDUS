@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio 13</title>
+</head>
+<body>
+
+    <script>
+    const calcularMediaArrayArrow = (arr) => {
+    if (arr.length === 0) {
+        return 0;
+    }
+
+    const soma = arr.reduce((acc, num) => acc + num, 0);
+    return soma / arr.length;
+    };
+
+    const inputArray = prompt("Digite os números do array separados por espaço:");
+    const numeros = inputArray.split(" ").map(Number);
+    const media = calcularMediaArrayArrow(numeros);
+    alert(`A média dos números no array é: ${media}`);
+
+    </script>
+</body>
+</html>

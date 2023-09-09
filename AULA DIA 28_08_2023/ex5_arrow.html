@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>exercicio5</title>
+ </head>
+ <body>
+    raio: <input type="number" name="a" id="a"><br>
+    <button onclick="calcularArea()">Calcular Área</button>
+    <button onclick="calcularPerimetro()">Calcular Perímetro</button>
+
+    <script>
+        const calcularArea = () => {
+            const raio = parseFloat(document.getElementById('a').value);
+
+            if (!isNaN(raio)) {
+                const result1 = 3.14 * (raio ** 2);
+                alert("A área é: " + result1);
+            } else {
+                alert("Por favor, insira um valor válido para o raio.");
+            }
+        }
+
+        const calcularPerimetro = () => {
+            const raio = parseFloat(document.getElementById('a').value);
+
+            if (!isNaN(raio)) {
+                const result2 = 2 * 3.14 * raio;
+                alert("O perímetro é: " + result2);
+            } else {
+                alert("Por favor, insira um valor válido para o raio.");
+            }
+        }
+    </script>
+ </body>
+</html>
